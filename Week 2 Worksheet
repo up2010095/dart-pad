@@ -1,0 +1,36 @@
+import 'dart:math';
+
+void main() {
+  
+  print(circOfCircle(5).toStringAsFixed(2));
+  //these numbers in the brackets are the values we use for the consoles output.
+  
+  print(areaOfCircle(9).toStringAsFixed(2));
+  
+  print(gradient(1, 2, 4, 6).toStringAsFixed(2));
+  
+  print(distanceBetweenTwoPoints(1, 2, 4, 6).toStringAsFixed(2));
+  
+}
+
+
+double circOfCircle(double radius) {
+  return 2 * pi * radius;
+}
+
+
+double areaOfCircle(double radius) {
+  return pi * pow(radius, 2);
+  //pow is to the power
+}
+
+
+double gradient(int x1, int y1, int x2, int y2) {
+  return (y2 - y1) / (x2 - x1);
+}
+
+
+double distanceBetweenTwoPoints(int x1, int y1, int x2, int y2) {
+  return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+  //sqrt is square root
+}
